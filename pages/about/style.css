@@ -1,0 +1,53 @@
+*{
+	font-family: Helvetica;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+	background: linear-gradient(-45deg, #E01A4F, #5E2BFF);
+	animation: gradient 15s ease infinite;
+	background-size: 500% 500%;
+	overflow: hidden;
+	padding: 10px;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.AboutScreen {
+    font-weight: lighter;
+    text-align: center;
+    color: #CDCDCD;
+    padding: 40px;
+    width: 95vw;
+    height: 100%;
+	margin-top: 7%;
+	margin-left: 3%;
+}
+
+.navbar{
+    font-family: sans-serif;
+    position: absolute;
+    position: fixed;
+    color: #CDCDCD;
+    display: flex;
+    z-index: 1000;
+    right: 1%;
+    margin-top: 0.2%;
+}
+
+li a {
+    text-decoration: none;
+    color: #CDCDCD;
+}
