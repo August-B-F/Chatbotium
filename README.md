@@ -56,7 +56,7 @@ chat-bot/
    ```bash
    git clone https://github.com/Bob1883/Chatbotium
    cd jarvis-chat-bot
-```
+``
 
 2. **Insert your OpenAI key**
    Open `scripts/scripts.js` and replace the placeholder `KEY` in:
