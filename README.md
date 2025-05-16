@@ -1,6 +1,6 @@
 # Chat Bot
 
-A lightweight, web-based chatbot built on top of OpenAI’s “Davinci” engine—created just before ChatGPT’s public launch. It loads a simple HTML/CSS/JS interface, sends your messages to the OpenAI API, and displays Jarvis’s (often snarky) replies in real time.
+A lightweight, web-based chatbot built on top of OpenAI’s Davinci engine, created just before ChatGPT’s public launch. It loads a simple HTML/CSS/JS interface, sends your messages to the OpenAI API, and displays Jarvis’s (often snarky) replies in real time.
 
 > **Warning:**  
 > This was a proof-of-concept built in late 2022. The OpenAI API endpoints, authentication scheme, and usage quotas may have changed since then. You will likely need to update the fetch URL, parameters, and your API key to get it working again.
@@ -13,38 +13,13 @@ A lightweight, web-based chatbot built on top of OpenAI’s “Davinci” engine
 - **Conversational prompt** seeded with a “creative, funny, very sarcastic” AI persona  
 - **Automatic history trimming** once the conversation grows beyond ~15 lines  
 - **Enter-to-send** support: hit Enter to submit a message  
-- **Lightweight**—no build step or frameworks required  
-
----
-
-## Repository Structure
-
-```
-
-chat-bot/
-├── index.html           # Main chat interface + navbar
-├── styles.css           # Chat-specific styles
-├── navbar.css           # Shared navigation bar styles
-├── pages/
-│   ├── about/
-│   │    ├── about.html
-│   │    └── style.css
-│   ├── chat/
-│   │    ├── chat.html
-│   │    └── styles.css
-├── assets/
-│   ├── UnNamed.png      # Bigger logo 
-│   └── DontKnow2.png    # Logo used in the navbar
-└── scripts/
-    └── scripts.js       # Chat logic and OpenAI API calls
-
-```
+- **Lightweight**; no build step or frameworks required  
 
 ---
 
 ## Prerequisites
 
-- A browser (Chrome, Firefox, Edge, etc.)  
+- A browser (Firefox, Brave, Chrome, etc.)  
 - An [OpenAI API key](https://platform.openai.com/account/api-keys) with access to the “text-davinci-003” (or later) engine  
 - Basic web-server (optional)—you can also just open `index.html` directly  
 
@@ -63,6 +38,12 @@ chat-bot/
 
    ```js
    const OpenAl_Key = 'KEY';
+   ```
+
+   and 
+
+   ```js
+   'Authorization': 'Bearer KEY',
    ```
 
    with your actual API key.
@@ -89,4 +70,4 @@ chat-bot/
 
 ## License
 
-This toy project is released under the **MIT License**. Feel free to fork, experiment, and modernize—but attribution is appreciated.
+This toy project is released under the **MIT License**. Feel free to fork, experiment, and modernize, but attribution is appreciated.
